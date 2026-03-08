@@ -67,6 +67,8 @@ form input[type="radio"] {
     margin-right: 5px;
 }
 
+
+
 /* Buttons */
 button {
     margin-top: 20px;
@@ -87,13 +89,26 @@ button:hover {
 }
 
 /* Table styling (existing) */
-table {
+/* table {
     width: 90%;
     border-collapse: collapse;
     margin-bottom: 50px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     background-color: #FFFFFF;
     border-radius: 10px;
+    overflow: hidden;
+} */
+
+/* Table styling with fixed width */
+table {
+    width: 100%;           /* table full width by default */
+    max-width: 1000px;     /* maximum width for desktop */
+    min-width: 600px;      /* optional, minimum width */
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    background-color: #FFFFFF;
+    border-radius: 12px;
     overflow: hidden;
 }
 

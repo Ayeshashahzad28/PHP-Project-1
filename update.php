@@ -20,7 +20,7 @@ if(isset($_POST['update'])) {
     header("location: index.php");
 }
 ?>
-
+<link rel="stylesheet" href="style.css">
 <form  method="POST">
         <!-- first name -->
         <label>First Name:</label>

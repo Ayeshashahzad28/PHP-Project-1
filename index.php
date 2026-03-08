@@ -22,7 +22,7 @@ if(isset($_POST['save'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>STUDENT REGISTRATION FORM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -97,10 +97,12 @@ if(isset($_POST['save'])) {
             <td data-label="Gender"><?=$row['gender']; ?></td>
             <td data-label="Course"> <?=$row['course']; ?></td>
             <td data-label="Created_At"><?=$row['created_at']; ?></td>
-            <td data-label="Action"></td>
-            <td>
+            <td data-label="Action">
                 <a href="update.php?id=<?= $row['id']; ?>">EDIT</a>
                 <a href="delete.php?id=<?= $row['id']; ?>" onclick="return confirm('Are you sure?')">DELETE</a>
+            </td>
+            <td>
+                
 
             </td>
         </tr>
