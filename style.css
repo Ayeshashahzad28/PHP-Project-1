@@ -1,0 +1,176 @@
+/* Global reset & font */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F7;
+    padding: 30px 20px;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+/* Form styling */
+form {
+    background-color: #FFFFFF;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #2C3E50;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #E5E5E5;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #3498DB;
+    box-shadow: 0 0 5px #3498DB;
+}
+
+/* Radio buttons */
+form input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+/* Buttons */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2C3E50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+   
+
+}
+
+button:hover {
+    background-color: #3498DB;
+}
+
+/* Table styling (existing) */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #2C3E50;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #E5E5E5;
+    color: #333333;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+/* Action links */
+td a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #2C3E50;
+    transition: 0.3s;
+}
+
+td a:hover {
+    color: #3498DB;
+}
+
+/* ----------------------------
+Responsive table for mobile
+---------------------------- */
+@media (max-width: 786px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead tr {
+        display: none; /* hide table headers */
+    }
+
+    tr {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    td {
+        border: none;
+        padding: 8px 0;
+        text-align: right;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 50%;
+        padding-right: 10px;
+        font-weight: bold;
+        text-align: left;
+        color: #2C3E50;
+    }
+
+    td:last-child {
+        text-align: center; /* Actions in center */
+    }
+}
