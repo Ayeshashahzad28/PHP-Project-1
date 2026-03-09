@@ -29,23 +29,34 @@ if(isset($_POST['save'])) {
     <h2>STUDENT REGISTRATION FORM</h2>
     <form  method="POST">
         <!-- first name -->
-        <label>First Name:</label><br>
-        <input type="text" name="firstname" placeholder="FirstName" required><br><br>
+        
+        
+        <div class="input-group">
+        <input type="text" name="firstname"  required>
+        <label>First Name:</label>
+        </div>
 
         <!-- last name -->
-        <label>Last Name:</label><br>
-        <input type="text" name="lastname" placeholder="LastName" required><br><br>
+         <div class="input-group">
+        <input type="text" name="lastname"  required>
+        <label>Last Name:</label>
+        </div>
 
         <!-- email address -->
-        <label>Email Address:</label><br>
-        <input type="email" name="email" placeholder="Email" required><br><br>
+         <div class="input-group">
+        <input type="email" name="email"  required>
+        <label>Email Address:</label>
+        </div>
 
         <!-- contact number -->
-        <label>Contact number:</label><br>
-        <input type="tel" name="phone" placeholder="Contact" required><br><br>
+        <div class="input-group">
+        <input type="tel" name="phone"  required>
+        <label>Contact number:</label>
+        </div>
 
+        <br>
         <!-- gender -->
-        <label>Gender:</label><br>
+        <label>Gender:</label><br><br>
         <input type="radio" name="gender" value="male">Male
         <input type="radio" name="gender" value="Female">Female
         <input type="radio" name="gender" value="Other">Other
@@ -69,7 +80,7 @@ if(isset($_POST['save'])) {
         
     </form>
     
-    <h2>Student List</h2>
+    <h2>STUDENT LIST</h2>
     <table>
         <tr>
             <th>ID</th>

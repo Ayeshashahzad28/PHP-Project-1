@@ -22,27 +22,37 @@ if(isset($_POST['update'])) {
 ?>
 <link rel="stylesheet" href="style.css">
 <form  method="POST">
-        <!-- first name -->
+
+        <div class="input-group">
+        <input type="text" name="firstname"  required value="<?= $data['firstname']; ?>">
         <label>First Name:</label>
-        <input type="text" name="firstname" placeholder="Name" required value="<?= $data['firstname']; ?>">
+        </div>
 
         <!-- last name -->
+         <div class="input-group">
+        <input type="text" name="lastname"  required value="<?= $data['lastname']; ?>">
         <label>Last Name:</label>
-        <input type="text" name="lastname" placeholder="Name" required value="<?= $data['lastname']; ?>">
+        </div>
 
         <!-- email address -->
+         <div class="input-group">
+        <input type="email" name="email"  required value="<?= $data['email']; ?>">
         <label>Email Address:</label>
-        <input type="email" name="email" placeholder="Email" required value="<?= $data['email']; ?>">
+        </div>
 
         <!-- contact number -->
+        <div class="input-group">
+        <input type="tel" name="phone"  required value="<?= $data['phone']; ?>">
         <label>Contact number:</label>
-        <input type="tel" name="phone" placeholder="Contact number" required value="<?= $data['phone']; ?>">
+        </div>
+
 
         <!-- gender -->
-        <label>Gender:</label>
+        <label>Gender:</label><br>
         <input type="radio" name="gender" value="male" <?= ($data['gender'] == 'male') ? 'checked' : ''; ?>>Male
         <input type="radio" name="gender" value="Female" <?= ($data['gender'] == 'Female') ? 'checked' : ''; ?>>Female
         <input type="radio" name="gender" value="Other" <?= ($data['gender'] == 'Other') ? 'checked' : ''; ?>>Other
+        <br><br>
 
         <!-- course -->
         <label>Course Enrollment:</label>
