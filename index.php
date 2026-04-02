@@ -96,7 +96,6 @@ if(isset($_POST['save'])) {
 
         <?php
         $result = mysqli_query($conn, "SELECT * FROM student_records");
-
         while($row = mysqli_fetch_assoc($result)) {
         ?>    
         <tr>
@@ -113,8 +112,6 @@ if(isset($_POST['save'])) {
                 <a href="delete.php?id=<?= $row['id']; ?>" onclick="return confirm('Are you sure?')">DELETE</a>
             </td>
             <td>
-                
-
             </td>
         </tr>
         <?php } ?>
